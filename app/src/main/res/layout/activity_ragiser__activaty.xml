@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ragiser_Activaty"
+    android:orientation="vertical">
+
+    <include layout="@layout/manu_bar"
+        android:id="@+id/register_appBarId"/>
+
+    <LinearLayout
+        android:paddingBottom="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:textSize="25dp"
+            android:layout_margin="30dp"
+            android:id="@+id/NameId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:inputType="textPersonName" />
+        <EditText
+            android:textSize="25dp"
+            android:layout_margin="30dp"
+            android:id="@+id/EmailId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:textSize="25dp"
+            android:layout_margin="30dp"
+            android:id="@+id/PasswordId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Password"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:layout_margin="20dp"
+            android:id="@+id/rememberPassIdofrSongIn"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Remember your password"/>
+
+    </LinearLayout>
+
+    <Button
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/SingINId"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Sing-in" />
+</LinearLayout>
